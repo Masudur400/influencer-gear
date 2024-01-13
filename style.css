@@ -37,6 +37,7 @@
 .second{
     display:flex;
     margin:0px 100px ;
+    padding:50px 0px;
     justify-content:space-between;
     align-items:center;
     gap:50px;
@@ -63,6 +64,14 @@
     background-image:url(images/Circle\ design.svg);
     background-repeat: no-repeat; 
 }
+/* third section styles  */
+.third{
+    margin:100px 100px; 
+    display:flex;
+    justify-content:space-between;
+    /* text-align:center; */
+    
+}
 
 
 
@@ -71,14 +80,35 @@
 
 @media screen and (max-width:576px) {
     .first,
-    .second
+    .second,
+    .third
     {
         display:grid;
         margin:0px;
+        padding:0px;
     }
     .second-img{
         width:70%;  
     }
-     
+    .third
+    {
+        gap:30px;
+        margin-top:50px;
+       justify-content: center;
+       width:70%;
+    } 
     
 }
+
+
+@media screen and(min-width:576px) and (max-width:992px) {
+     
+    .second-img{
+        width:70%;  
+    } 
+    .third{
+        margin:0px;
+    }
+    
+}
+
